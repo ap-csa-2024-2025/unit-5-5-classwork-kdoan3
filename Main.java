@@ -2,13 +2,21 @@ import java.util.Scanner;
 
 public class Main
 {
+  public static void createDog(Dog inDog, String breed, String name, String color, double size)
+  {
+    inDog.setBreed(breed);
+    indog.setName(name);
+    inDog.setColor(color);
+    indog.setSize(size);
+  }
   public static void main(String[] args)
   {
-    // Create objects and test your classes in here
-
-    Dog d = new Dog();
-    d.setBreed("terrier");
-    System.out.println(d.getBreed());
+    Dog d = new Dog("weiner dog", "schnitzel", "red", 1000);
+    Dog d1 = new Dog();
+    Dog d2 = new Dog("terrier", "max", "white", 5);
+    Dog d3 = new Dog1();
+  }
+} 
 
 System.out.println("Enter the person's first name:");
 String fname = sc.nextLine();
@@ -49,5 +57,5 @@ while (!input.equals("q"))
   }
 }
 
-  }
-}
+  
+
